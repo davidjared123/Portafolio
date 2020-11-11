@@ -1,0 +1,67 @@
+            /* clases generales  */
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: var(--primary);
+}
+
+.wrapper{
+    padding: 0 100px;
+}
+
+:root{
+    --secondary: #212336;
+    --primary: #23263a;
+    --danger: #ff4a57;
+    --danger-dark: #c33842;
+    --info: #2b2d41;
+}
+
+            /* .navbar */
+    /* navbar estilos */
+.navbar{
+    height: 60px;
+    background-color: var(--secondary);
+}
+    /* icono menu desplegable */
+#check{
+    display: none;
+}
+
+label svg{
+    float: right;
+    margin-top: 15px;
+    width: 25px;
+                            /* hace que no se vea el icono de menu desplegable */
+                            display: none;  
+}
+.checkbox{
+    display: inline;
+}
+    /* titulo navbar  */
+.navbar-title{
+    font-size: 30px;
+    font-family: Coolvetica;
+}  
+
+.f{
+    color: var(--danger-dark);
+}
+
+    /* navbar menu */
+nav ul{
+    float: right;
+}
+nav ul li {
+    display: inline;
+    font-family: Coolvetica;
+    text-transform: uppercase;
+    padding: 5px;
+    line-height: 30px;
+}
+nav a{
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
