@@ -12,21 +12,21 @@
         <div class="wrapper">
             <nav>    
                 <div class="checkbox">
-                    <input type="checkbox" name="" id="check">
+                    <input type="checkbox" name="" id="check" onclick="menu()">
                     <label for="check">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
                     </label>
                 </div>  
                     <span class="navbar-title"><a href="">porta<span class="f">f</span>olio</a></span>
                               
-                    <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Servicios</a></li>
-                        <li><a href="">Habilidades</a></li>
-                        <li><a href="">Nosotros</a></li>
-                        <li><a href="">Portafolio</a></li>
-                        <li><a href="">Contacto</a></li>
-                    </ul>          
+                    <div class="nav-links">
+                        <a href="">Inicio</a>
+                        <a href="">Servicios</a>
+                        <a href="">Habilidades</a>
+                        <a href="">Nosotros</a>
+                        <a href="">Portafolio</a>
+                        <a href="">Contacto</a>
+                    </div>          
             </nav>
         </div>
     </section>
@@ -153,11 +153,21 @@
     <section class="contact">
         <div class="wrapper">
             <h3 class="contact-title">Contáctate conmigo</h3>
+            <div class="bottom-bar"></div>
             <div class="contact-grid">
                 <div class="contact-form">
                     <input type="email" name="" id="" placeholder="Email">
                     <input type="text" name="" id="" placeholder="Mensaje">
-                    <button type="submit">Enviar Mensaje ></button>
+                    <button type="submit">Enviar Mensaje 
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 490.661 490.661" style="enable-background:new 0 0 490.661 490.661;" xml:space="preserve">
+	<g>
+		<path d="M453.352,236.091L48.019,1.424c-3.285-1.899-7.36-1.899-10.688,0c-3.285,1.899-5.333,5.419-5.333,9.237v469.333
+			c0,3.819,2.048,7.339,5.333,9.237c1.643,0.939,3.499,1.429,5.333,1.429c1.856,0,3.691-0.469,5.355-1.429l405.333-234.667
+			c3.285-1.92,5.312-5.44,5.312-9.237S456.637,237.989,453.352,236.091z"/>
+	</g>
+</svg>
+                    </button>
                 </div>
                 <div></div>
                 <div class="obj">
