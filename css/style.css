@@ -36,6 +36,7 @@ body{
     background-color: var(--secondary);
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 .nav-links{
