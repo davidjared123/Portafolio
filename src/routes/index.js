@@ -1,13 +1,17 @@
 const { Router } = require('express')
 const nodemailer = require("nodemailer");
 const router = Router()
+require('dotenv').config();
+
+// console.log(process.env.PASSWORD);
+// console.log(process.env.EMAIL);
 
 router.post('/send-email', async(req, res)=>{
     const {email, message} = req.body;
     contentHTML = `
         <h1>Enviado desde Web Portafolio</h1>
         <h3>DE: ${email}</h3>
-        <b>DATA: ${message}</b>
+        <b>MENSAJE: ${message}</b>
         <br />
         <br />
         <br />
@@ -22,8 +26,8 @@ router.post('/send-email', async(req, res)=>{
             // secure: false, // true for 465, false for other ports
             service: 'gmail',
             auth: {
-              user: 'davidjared123@gmail.com', // generated ethereal user
-              pass: 'gksctdlllglchfng', // generated ethereal password
+              user: process.env.EMAIL, // generated ethereal user
+              pass: process.env.PASSWORD, // generated ethereal password
             },
             tls: {
               rejectUnauthorized: false
